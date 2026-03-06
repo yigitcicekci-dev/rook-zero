@@ -232,7 +232,7 @@ export function Playground({ lang }: { lang: Lang }) {
                 value={moveInput}
                 onChange={e => setMoveInput(e.target.value)}
                 placeholder={text.movePlaceholder}
-                className="flex-1 px-3 py-2 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 dark:text-white rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none"
+                className="flex-1 min-w-0 px-3 py-2 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 dark:text-white rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none"
               />
               <button type="submit" className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white rounded-lg font-medium transition-colors">
                 {text.moveBtn}
@@ -244,7 +244,7 @@ export function Playground({ lang }: { lang: Lang }) {
                 value={fenInput}
                 onChange={e => setFenInput(e.target.value)}
                 placeholder={text.fenPlaceholder}
-                className="flex-1 px-3 py-2 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 dark:text-white rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none"
+                className="flex-1 min-w-0 px-3 py-2 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 dark:text-white rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none"
               />
               <button type="submit" className="px-4 py-2 bg-slate-800 hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 text-white rounded-lg font-medium transition-colors">
                 {text.fenBtn}
@@ -281,10 +281,10 @@ export function Playground({ lang }: { lang: Lang }) {
                 </div>
               </div>
               
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <label className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase">{text.moveHistory}</label>
-                  <div className="font-mono text-xs p-2 bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded text-slate-700 dark:text-slate-300 h-32 overflow-y-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase">{text.moveHistory}</label>
+              <div className="font-mono text-xs p-2 bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded text-slate-700 dark:text-slate-300 h-32 overflow-y-auto">
                     {gameState.history.length === 0 ? <span className="text-slate-400 dark:text-slate-500">{text.noMoves}</span> : (
                       <ol className="list-decimal pl-5 space-y-1">
                         {gameState.history.reduce((acc: string[][], move, i) => {
@@ -303,7 +303,7 @@ export function Playground({ lang }: { lang: Lang }) {
                 </div>
                 <div>
                   <label className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase">{text.pgn}</label>
-                  <div className="font-mono text-xs p-2 bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded text-slate-700 dark:text-slate-300 h-32 overflow-y-auto whitespace-pre-wrap">
+                  <div className="font-mono text-xs p-2 bg-slate-50 dark:bg-slate-950 border border-slate-100 dark:border-slate-800 rounded text-slate-700 dark:text-slate-300 h-32 overflow-y-auto whitespace-pre-wrap break-all">
                     {gameState.pgn || <span className="text-slate-400 dark:text-slate-500">{text.empty}</span>}
                   </div>
                 </div>

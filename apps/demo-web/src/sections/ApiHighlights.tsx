@@ -84,7 +84,7 @@ export function ApiHighlights({ lang }: { lang: Lang }) {
             ))}
           </div>
           
-          <div className="lg:col-span-8">
+          <div className="lg:col-span-8 h-[400px] lg:h-[500px] min-w-0 w-full">
             <div className="rounded-2xl bg-[#0d1117] dark:bg-[#070b14] overflow-hidden shadow-2xl border border-slate-800 dark:border-slate-800/80 h-full flex flex-col">
               <div className="flex items-center px-4 py-3 border-b border-slate-800 dark:border-slate-800/80 bg-[#0d1117]/80 dark:bg-[#070b14]/80">
                 <div className="flex gap-2">

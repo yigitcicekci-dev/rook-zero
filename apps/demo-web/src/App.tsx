@@ -40,17 +40,17 @@ function App() {
   const text = t[lang];
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100 selection:bg-indigo-100 selection:text-indigo-900 dark:selection:bg-indigo-900/50 dark:selection:text-indigo-200">
+    <div className="min-h-screen overflow-x-hidden bg-slate-50 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100 selection:bg-indigo-100 selection:text-indigo-900 dark:selection:bg-indigo-900/50 dark:selection:text-indigo-200">
       <nav className="sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
         <div className="max-w-6xl mx-auto px-4 h-24 sm:h-28 flex items-center justify-between">
-          <div className="flex items-center mt-2 -ml-2">
-            <img src={logoLight} alt="Rook Zero" className="h-20 sm:h-28 lg:h-32 w-auto dark:hidden object-contain mix-blend-multiply" />
-            <img src={logoDark} alt="Rook Zero" className="h-20 sm:h-28 lg:h-32 w-auto hidden dark:block object-contain" />
+          <div className="flex items-center mt-2 -ml-2 shrink-0">
+            <img src={logoLight} alt="Rook Zero" className="h-16 sm:h-28 lg:h-32 w-auto max-w-[45vw] sm:max-w-none dark:hidden object-contain mix-blend-multiply" />
+            <img src={logoDark} alt="Rook Zero" className="h-16 sm:h-28 lg:h-32 w-auto max-w-[45vw] sm:max-w-none hidden dark:block object-contain" />
           </div>
-          <div className="flex gap-4 sm:gap-6 items-center text-sm font-medium text-slate-600 dark:text-slate-300">
+          <div className="flex gap-3 sm:gap-6 items-center text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 shrink-0">
             <a href="#playground" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">{text.nav.playground}</a>
             <a href="#api" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">{text.nav.api}</a>
-            <a href="https://github.com/yigitcicekci/rook-zero" target="_blank" rel="noreferrer noopener" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors hidden sm:block">GitHub</a>
+            <a href="https://github.com/yigitcicekci/rook-zero" target="_blank" rel="noreferrer noopener" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors hidden md:block">GitHub</a>
             
             <div className="relative flex items-center justify-center bg-indigo-50 dark:bg-indigo-900/30 rounded-lg hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-colors focus-within:ring-2 focus-within:ring-indigo-500">
               <select 
