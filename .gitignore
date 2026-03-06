@@ -10,6 +10,7 @@ build/
 rook-zero-*.tgz
 yigitcicekci-rook-zero-*.tgz
 .npmrc
+.npmrc.local
 
 # TypeScript build artifacts
 *.js

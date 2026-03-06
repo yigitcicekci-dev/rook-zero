@@ -1,6 +1,6 @@
 {
-  "name": "@yigitcicekci-dev/rook-zero",
-  "version": "1.0.0",
+  "name": "@yigitcicekci/rook-zero",
+  "version": "1.0.1",
   "description": "Chess rules, notation, and Elo rating library with strict validation and legal move generation.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,8 +25,8 @@
     "example:build": "npm --prefix examples/multiplayer-server run build",
     "example:dev": "npm --prefix examples/multiplayer-server run dev",
     "example:start": "npm --prefix examples/multiplayer-server run start",
-    "publish:npm": "npm publish --access public",
-    "publish:github": "npm publish --registry=https://npm.pkg.github.com",
+    "publish:npm": "npm publish --userconfig=/Users/yigitcicekci/.npmrc --registry=https://registry.npmjs.org --access public",
+    "publish:github": "npm publish --userconfig=.npmrc.github --registry=https://npm.pkg.github.com",
     "prepublishOnly": "npm run clean && npm run build"
   },
   "devDependencies": {
@@ -56,11 +56,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yigitcicekci-dev/rook-zero.git"
+    "url": "git+https://github.com/yigitcicekci/rook-zero.git"
   },
-  "homepage": "https://github.com/yigitcicekci-dev/rook-zero#readme",
+  "homepage": "https://github.com/yigitcicekci/rook-zero#readme",
   "bugs": {
-    "url": "https://github.com/yigitcicekci-dev/rook-zero/issues"
+    "url": "https://github.com/yigitcicekci/rook-zero/issues"
   },
   "license": "MIT"
 }
