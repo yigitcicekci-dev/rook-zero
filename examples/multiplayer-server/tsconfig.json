@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "paths": {
-      "rook-zero": ["../../src/index.ts"]
+      "@yigitcicekci-dev/rook-zero": ["../../src/index.ts"]
     },
     "types": ["node"]
   },

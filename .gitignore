@@ -9,6 +9,7 @@ dist/
 build/
 rook-zero-*.tgz
 yigitcicekci-rook-zero-*.tgz
+.npmrc
 
 # TypeScript build artifacts
 *.js

@@ -15,13 +15,13 @@ Rook Zero is chess rules library for legal move generation, strict validation, d
 ## Installation
 
 ```bash
-npm install rook-zero
+npm install @yigitcicekci-dev/rook-zero
 ```
 
 ## 30-Second Example
 
 ```ts
-import { RkEngine } from 'rook-zero';
+import { RkEngine } from '@yigitcicekci-dev/rook-zero';
 
 const rkengine = new RkEngine();
 
@@ -35,7 +35,7 @@ console.log(rkengine.history());
 ```
 
 ```ts
-import { calculateMatchElo, getFideKFactor } from 'rook-zero';
+import { calculateMatchElo, getFideKFactor } from '@yigitcicekci-dev/rook-zero';
 
 const whiteKFactor = getFideKFactor({ rating: 1820, gamesPlayed: 64 });
 const blackKFactor = getFideKFactor({ rating: 1765, gamesPlayed: 48 });
@@ -128,7 +128,7 @@ Rook Zero exposes:
 - `roundEloChange(delta)`
 
 ```ts
-import { calculateEloChange } from 'rook-zero';
+import { calculateEloChange } from '@yigitcicekci-dev/rook-zero';
 
 const update = calculateEloChange({
   rating: 1800,
